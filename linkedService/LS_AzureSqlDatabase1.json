@@ -16,7 +16,7 @@
 					"referenceName": "LS_AzureKeyVault1",
 					"type": "LinkedServiceReference"
 				},
-				"secretName": "latha-db-meta"
+				"secretName": "latha-meta-db"
 			}
 		}
 	}
