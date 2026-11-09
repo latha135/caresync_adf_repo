@@ -124,6 +124,12 @@
 						"dependencyConditions": [
 							"Succeeded"
 						]
+					},
+					{
+						"activity": "Check Source Type",
+						"dependencyConditions": [
+							"Succeeded"
+						]
 					}
 				],
 				"policy": {
@@ -364,6 +370,26 @@
 							}
 						}
 					]
+				}
+			},
+			{
+				"name": "Check Source Type",
+				"type": "Switch",
+				"dependsOn": [
+					{
+						"activity": "Check load type",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"on": {
+						"value": "@activity('Read Table Details').output.firstRow.source_system",
+						"type": "Expression"
+					},
+					"cases": []
 				}
 			}
 		],
