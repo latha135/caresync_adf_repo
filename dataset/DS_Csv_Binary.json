@@ -1,5 +1,5 @@
 {
-	"name": "Binary1",
+	"name": "DS_Csv_Binary",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_ADLS",
@@ -9,7 +9,7 @@
 			"folder": {
 				"type": "string"
 			},
-			"source": {
+			"container": {
 				"type": "string"
 			}
 		},
