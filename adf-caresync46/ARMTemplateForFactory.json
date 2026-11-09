@@ -707,11 +707,11 @@
 				"parameters": {
 					"source_system": {
 						"type": "string",
-						"defaultValue": "neon_postgres"
+						"defaultValue": "adls_csv"
 					},
 					"adf_run_id": {
 						"type": "string",
-						"defaultValue": "a4"
+						"defaultValue": "a7"
 					}
 				},
 				"variables": {
@@ -1004,6 +1004,10 @@
 						"type": "AzureBlobFSLocation",
 						"folderPath": {
 							"value": "@dataset().folder",
+							"type": "Expression"
+						},
+						"fileSystem": {
+							"value": "@dataset().container",
 							"type": "Expression"
 						}
 					}
