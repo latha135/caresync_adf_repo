@@ -71,12 +71,11 @@
 				"userProperties": [],
 				"typeProperties": {
 					"pipeline": {
-						"referenceName": "PL_SOURCE_TO_SILVER_MAIN",
+						"referenceName": "PL_SIlVER_TO_GOLD",
 						"type": "PipelineReference"
 					},
 					"waitOnCompletion": true,
 					"parameters": {
-						"source_system": "adls_csv",
 						"adf_run_id": {
 							"value": "@pipeline().RunId",
 							"type": "Expression"
